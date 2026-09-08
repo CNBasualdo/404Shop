@@ -1,0 +1,132 @@
+.compraExitosaPage {
+    min-height: calc(100vh - 65px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+
+    background-color: var(--color-background);
+
+    box-sizing: border-box;
+}
+
+.compraExitosaCard {
+    width: 100%;
+    max-width: 520px;
+
+    padding: 45px;
+
+    background-color: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-sm);
+
+    text-align: center;
+}
+
+.compraExitosaIcon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: var(--color-accent);
+
+    color: #111827;
+
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.compraExitosaCard h1 {
+    margin: 0 0 10px;
+
+    color: var(--color-text);
+
+    font-size: 2rem;
+}
+
+.compraMensaje {
+    margin: 0 auto 30px;
+
+    max-width: 400px;
+
+    color: var(--color-text-secondary);
+
+    line-height: 1.5;
+}
+
+.pedidoInfo,
+.totalCompra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid var(--color-border);
+
+    color: var(--color-text-secondary);
+}
+
+.pedidoInfo strong,
+.totalCompra strong {
+    color: var(--color-text);
+}
+
+.totalCompra {
+    margin-bottom: 30px;
+
+    border-bottom: none;
+}
+
+.totalCompra strong {
+    font-size: 1.4rem;
+}
+
+.volverCatalogo {
+    width: 100%;
+
+    padding: 13px 20px;
+
+    border: none;
+    border-radius: var(--radius-sm);
+
+    background-color: var(--color-accent);
+
+    color: #111827;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform var(--transition-fast),
+        opacity var(--transition-fast);
+}
+
+.volverCatalogo:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+    .compraExitosaCard {
+        padding: 30px 20px;
+    }
+
+    .compraExitosaCard h1 {
+        font-size: 1.6rem;
+    }
+}

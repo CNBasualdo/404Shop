@@ -1,0 +1,131 @@
+.logo{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #ffffff;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+    transition: transform 0.2 ease;
+}
+
+.logo-mark{
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 58px;
+    height: 46px;
+}
+
+.logo-cart{
+    position: relative;
+    z-index: 2;
+    
+    width: 42px;
+    height: 42px;
+
+    color: #ffffff ;
+    stroke-width: 1.8;
+
+    transition: transform 0.25s ease, color 0.25 ease;
+
+}
+.logo-speed{
+    position: absolute;
+    left: -8px;
+    top: 50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    transform: translateY(-50%);
+}
+
+.logo-speed span{
+    display: block;
+    height: 3px;
+    border-radius: 999px;
+    background-color: var(--color-accent);
+    transform-origin: right;
+    transition: width 0.25 ease, ;
+}
+
+.logo-speed span:nth-child(1){
+    width: 14px;
+}
+
+.logo-speed span:nth-child(2){
+    width: 24px;
+}
+
+.logo-speed span:nth-child(3){
+    width: 17px;
+}
+
+.logo-text{
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    line-height: 1;
+}
+
+.logo-number{
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -1.8px;
+}
+
+.logo-shop{
+    color: var(--color-accent);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+
+
+.logo:hover{
+    transform:  translateY(-1px);
+}
+.logo:hover .logo-cart{
+    color: var(--color-accent);
+    transform: translateX(3px);
+}
+
+.logo:hover .logo-speed span:nth-child(1){
+    width: 20px;
+}
+
+.logo:hover .logo-speed span:nth-child(2){
+    width: 29px;
+}
+
+.logo:hover .logo-speed span:nth-child(3){
+    width: 23px;
+}
+
+@media (max-width: 600px) {
+    .logo{
+        gap: 7px;
+    }
+    .logo-mark{
+        width: 45px;
+        height: 38px;
+    }
+    .logo-cart{
+        width: 37px;
+        height: 37px;
+    }
+    .logo-number{
+        font-size: 27px;
+    }
+    .logo-shop{
+        font-size: 17px;
+    }
+}
