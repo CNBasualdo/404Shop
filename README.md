@@ -1,3 +1,5 @@
+
+![Banner](./docs/screenshots/Banne404Shop.png)
 # 404Shop
 
 E-commerce de indumentaria desarrollado con **Django REST Framework** y **React**.
